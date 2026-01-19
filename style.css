@@ -13,6 +13,23 @@ main{
     /* background-color: #1A0B2E; */
 }
 
+#about .about-heading{
+    text-align: center;
+}
+#about .about-heading h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+#about hr{
+    margin: 80px 0;
+}
+#about .milestones{
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 /* why-choose-techwavewhy */
 #why-choose-techwave h2{
     font-size: 3rem;
@@ -29,7 +46,7 @@ main{
    /* place-items: center; */
 }
 
-.card{
+#why-choose-techwave .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
