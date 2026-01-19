@@ -2,17 +2,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #1A0B2E; */
+    
 
 }
 
 main{
-    
     width: 70%;
     max-width: 1590px;
     margin: 0 auto;
+    /* background-color: #1A0B2E; */
 }
-.meet-the-host h2{
+
+/* why-choose-techwavewhy */
+#why-choose-techwave h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#why-choose-techwave .techwave-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1, 225px);
+   /* border: 1px solid rebeccapurple; */
+    gap: 30px;
+    margin-bottom: 120px;
+   /* place-items: center; */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start ;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+.towRows{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.largeRow{
+    grid-column: span 2;
+    grid-row: span 1 ;
+}
+/* featured episode */
+#featured-episode h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+#featured-episode .video-card{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 120px;
+} 
+#featured-episode .video-wraper{
+    position: relative;
+}
+.thumbnail img{
+    position: absolute;
+}
+
+
+#featured-episode .video-wraper iframe, 
+.thumbnail img{
+width: 100%;
+height: auto;
+border-radius: 24px 24px 0 0;
+}
+#meet-the-host h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
