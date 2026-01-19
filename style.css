@@ -43,6 +43,7 @@ main{
    /* border: 1px solid rebeccapurple; */
     gap: 30px;
     margin-bottom: 120px;
+    width: 100%;
    /* place-items: center; */
 }
 
@@ -82,10 +83,13 @@ main{
     position: relative;
     transform: translateY(100%)
 }
+#featured-episode .video-text{
+    margin-top: 24px;
+
+}
 #featured-episode h3{
     font-size: 1.5rem;
-    margin-top: 24px;
-    
+  
 }
 
 
