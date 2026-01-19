@@ -9,22 +9,66 @@
 nav{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 30px 0;
+    background-color: #1A0B2E;
 
 }
+nav h2{
+    font-size: 3rem;
+    color: #ffffff;
+
+}
+nav h2 .logo{
+    
+    background:linear-gradient(
+        to bottom,
+        
+        #F7E93F 0%,
+        #FB09B4 51%,
+        #9100F8 100%
+
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-shadow: -1px -1px black,
+   -1px -1px black,
+    -1px -1px black,
+   -1px =1px black;
+
+}
+
  nav ul{
     display: flex;
     gap: 32px;
+    align-items: center;
  }
  nav ul li{
     list-style-type: none;
  }
  nav ul a {
     text-decoration: none;
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 500;
+    color: #ffffff;
  }
  .subscribe a{
-    background-color: #533C72;
-    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 16px 12px;
+    border-radius: 1000px;
+    text-decoration: none;
+    background: linear-gradient(
+        
+        to right,
+        #F7E93F 0%,
+        #FB09B4 51%,
+        #9100F8 100%
+    );
+    
  }
 
  /* hero section */
@@ -39,10 +83,7 @@ nav{
  .hero-bg img{
     width: 100%;
  }
- .hero-body{
-    /* border: 3px solid red; */
-    
- }
+ 
  .hero-body .icons{
     /* display: flex;
     justify-content: center;
@@ -57,6 +98,16 @@ nav{
     width: 250px;
     height: 250px;
 } 
+.badge{
+    font-size: 1.1rem;
+    border-radius: 1000px;
+    padding: 8px 16px;
+    top: 8%;
+    left: 75%;
+    position: absolute;
+    background-color: #00FF88;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+}
 
 
 .hero-body .microphone{
@@ -68,19 +119,18 @@ nav{
     top: 20%;
 } 
 .hero-text{
-    /* width: 550px; */
     position: absolute;
-    /* left: 0;
-    right: 0; */
     top: 55%;
     left: 31%;
     text-align: center;
     color: red;
     bottom: 50%;
-    /* border: 1px solid green; */
 }
+
 .hero-text h1{
     font-size: 3.75rem;
+    color: #ffffff;
+    font-weight: 800;
 }
 
 /* main section */
