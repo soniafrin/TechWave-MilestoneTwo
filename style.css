@@ -81,6 +81,10 @@ main{
 .thumbnail img{
     position: relative;
     transform: translateY(100%)
+}
+#featured-episode h3{
+    font-size: 1.5rem;
+    margin-top: 24px;
     
 }
 
