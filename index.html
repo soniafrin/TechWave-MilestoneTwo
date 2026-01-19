@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>TechWave</title>
 </head>
-<body>
+<body class="inter-font-style">
+    <!-- header -->
     <header>
         <nav>
-            <h2>Tech<span class="logo">Wave</span></h2>
+            <h2>Tech<span class="gradient">Wave</span></h2>
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
@@ -34,180 +38,162 @@
                     <h1>TechWave</h1>
                         <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
                         <div class="subscribe">
-                            <a href="">Listen on Spotify</a>
-                            <a href="">Subscribe</a>
+                            <a class="btn" href="">Listen on Spotify</a>
+                            <a id="transparent-btn" href="">Subscribe</a>
                         </div>
                 </div>
             </div>
         </section>
 
     </header>
+
+    <!-- main section -->
     <main>
-        <!-- about section -->
-        <section id="about">
-            <div class="about-heading">
-                <h2>About the Podcast</h2>
-                <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
-                We break down complex topics into digestible insights, explore productivity strategies that actually work,
-                and share stories of personal growth from industry leaders.
-                    <br>
-                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
-            </div>
-            <hr>
-            <div class="milestones">
-                <div class="card">
-                    <h3>150K+</h3>
-                    <p>Monthly Listeners</p>
+        <section id="main">
+                <!-- about section -->
+            <section id="about">
+                <div class="about-heading">
+                    <h2>About the Podcast</h2>
+                    <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                    and share stories of personal growth from industry leaders.   
+                    </p>
+                    <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
                 </div>
-                <div class="card">
-                    <h3>200+</h3>
-                    <p>Episodes Published</p>
+                <hr>
+                <div class="milestones">
+                    <div class="card">
+                        <h3>150K+</h3>
+                        <p>Monthly Listeners</p>
+                    </div>
+                    <div class="card">
+                        <h3>200+</h3>
+                        <p>Episodes Published</p>
+                    </div>
+                    <div class="card">
+                        <h3>4.9 <span>★</span></h3>
+                        <p>Average Rating</p>
+                    </div>
+                    <div class="card">
+                        <h3>50+</h3>
+                        <p>Industry Experts</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>4.9 <span>★</span></h3>
-                    <p>Average Rating</p>
+            </section>
+
+            <!-- why-choose-techwave -->
+            <section id="why-choose-techwave">
+                <h2>Why Choose TechWave</h2>
+                <div class="techwave-card">
+                    <div class="card towRows">
+                        <img src=" assets/headphone.png" alt="">
+                        <h3>Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+                    <div class="card largeRow">
+                        <img src=" assets/headphone.png" alt="">
+                        <h3>Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+                    <div class="card largeRow">
+                        <img src=" assets/headphone.png" alt="">
+                        <h3>Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+                    <div class="card largeRow">
+                        <img src="assets/device.png" alt="">
+                        <h3>Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/headphone.png" alt="">
+                        <h3>Premium Audio Quality</h3>
+                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+
                 </div>
-                <div class="card">
-                    <h3>50+</h3>
-                    <p>Industry Experts</p>
+
+            </section>
+
+            <!-- featured-episode -->
+            <section id="featured-episode">
+                    <h2>Featured Episodes</h2>
+                    <div class="video-card">
+                        <article>
+                        <div class="video-wraper">
+                            <div class="thumbnail">
+                                <a href="https://youtu.be/vJWzH_2F64g?si=jbn5ogNaVxS3ppWm"><img src="assets/Screenshot11.png" alt=""></a>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vJWzH_2F64g?si=bfgh1nQN4M9W5YcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-text">
+                            <h3>The Future of AI in Everyday Life</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <span >42 min</span>
+                        </div>
+                        </article>
+                        <article>
+                        <div class="video-wraper">
+                            <div class="thumbnail">
+                                <a href="https://youtu.be/vJWzH_2F64g?si=jbn5ogNaVxS3ppWm"><img src="assets/Screenshot2.png" alt=""></a>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vJWzH_2F64g?si=bfgh1nQN4M9W5YcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-text">
+                            <h3>The Future of AI in Everyday Life</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <span >42 min</span>
+                        </div>
+                        </article>
+                        <article>
+                        <div class="video-wraper">
+                            <div class="thumbnail">
+                                <a href="https://youtu.be/vJWzH_2F64g?si=jbn5ogNaVxS3ppWm"><img src="assets/Screenshot3png.png" alt=""></a>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vJWzH_2F64g?si=bfgh1nQN4M9W5YcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-text">
+                            <h3>The Future of AI in Everyday Life</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <span >42 min</span>
+                        </div>
+                        </article>              
+                    </div>
+            </section>
+
+            <!-- meet the host -->
+            <section id="meet-the-host">
+                <h2>Meet the Host</h2>
+                <div class="the-host">
+                    <div class="host-img">
+                        <img src="assets/host.png" alt="">
+                    </div>
+                    <div class="host-info">
+                        <h3>Alex Kumar</h3>
+                        <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                        <div class="host-icons">
+                            <div class="img-circle">
+                                <a href=""><img src="assets/linkedin.png" alt=""></a>
+                            </div>
+                            <div class="img-circle">
+                                <a href=""><img src="assets/x.png" alt=""></a>
+                            </div>
+                            <div class="img-circle">
+                                <a href=""><img src="assets/instagram.png" alt=""></a>
+                            </div>
+                            <div class="img-circle">
+                                <a href=""><img src="assets/youtube.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
+            </section>
         </section>
-
-        <!-- why-choose-techwave -->
-        <section id="why-choose-techwave">
-            <h2>Why Choose TechWave</h2>
-            <div class="techwave-card">
-                <div class="card towRows">
-                    <img src=" assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card largeRow">
-                    <img src=" assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card largeRow">
-                    <img src=" assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card largeRow">
-                    <img src="assets/device.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-
-                <!-- dummy -->
-                <!-- <div class="card largeRow">
-                    <img src="assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card largeRow">
-                    <img src="assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card largeRow">
-                    <img src="/assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/headphone.png" alt="">
-                    <h3>Premium Audio Quality</h3>
-                    <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                </div> -->
-            </div>
-
-        </section>
-
-        <!-- featured-episode -->
-        <section id="featured-episode">
-                <h2>Featured Episodes</h2>
-                <div class="video-card">
-                    <article>
-                    <div class="video-wraper">
-                        <div class="thumbnail">
-                            <a href="https://youtu.be/vJWzH_2F64g?si=jbn5ogNaVxS3ppWm"><img src="assets/Screenshot11.png" alt=""></a>
-                        </div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vJWzH_2F64g?si=bfgh1nQN4M9W5YcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-text">
-                        <h3>The Future of AI in Everyday Life</h3>
-                        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                        <span >42 min</span>
-                    </div>
-                    </article>
-                    <article>
-                    <div class="video-wraper">
-                        <div class="thumbnail">
-                            <a href="https://youtu.be/vJWzH_2F64g?si=jbn5ogNaVxS3ppWm"><img src="assets/Screenshot2.png" alt=""></a>
-                        </div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vJWzH_2F64g?si=bfgh1nQN4M9W5YcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-text">
-                        <h3>The Future of AI in Everyday Life</h3>
-                        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                        <span >42 min</span>
-                    </div>
-                    </article>
-                    <article>
-                    <div class="video-wraper">
-                        <div class="thumbnail">
-                            <a href="https://youtu.be/vJWzH_2F64g?si=jbn5ogNaVxS3ppWm"><img src="assets/Screenshot3png.png" alt=""></a>
-                        </div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vJWzH_2F64g?si=bfgh1nQN4M9W5YcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-text">
-                        <h3>The Future of AI in Everyday Life</h3>
-                        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                        <span >42 min</span>
-                    </div>
-                    </article>              
-                </div>
-        </section>
-
-        <!-- meet the host -->
-        <section id="meet-the-host">
-            <h2>Meet the Host</h2>
-            <div class="the-host">
-                <div class="host-img">
-                    <img src="assets/host.png" alt="">
-                </div>
-                <div class="host-info">
-                    <h3>Alex Kumar</h3>
-                    <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                    <div class="host-icons">
-                        <div class="img-circle">
-                            <a href=""><img src="assets/linkedin.png" alt=""></a>
-                        </div>
-                        <div class="img-circle">
-                            <a href=""><img src="assets/x.png" alt=""></a>
-                        </div>
-                        <div class="img-circle">
-                            <a href=""><img src="assets/instagram.png" alt=""></a>
-                        </div>
-                        <div class="img-circle">
-                            <a href=""><img src="assets/youtube.png" alt=""></a>
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        
-
     </main>
+
     <!-- footer section -->
     <footer>
         <section id="container">
@@ -217,7 +203,7 @@
                 </div>
                 
                 <div class="footer-info">
-                    <h2>TechWave</h2>
+                    <h2>Tech<span class="gradient">Wave</span></h2>
                     <div class="footer-icons">
                         <a href="">
                             <img src="assets/spotify.png" alt="">

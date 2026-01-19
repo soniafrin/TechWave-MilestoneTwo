@@ -3,8 +3,27 @@
     padding: 0;
     box-sizing: border-box;
     
-
+    
 }
+
+.inter-font-style {
+  font-family: "Inter", sans-serif;
+}
+/* shared style */
+
+ .subscribe a{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 16px 12px;
+    border-radius: 1000px;
+    text-decoration: none;
+    margin-right: 8px;
+ }
+
+
+ /* main style */
 /* navbar */
 nav{
     display: flex;
@@ -19,7 +38,7 @@ nav h2{
     color: #ffffff;
 
 }
-nav h2 .logo{
+.gradient{
     
     background:linear-gradient(
         to bottom,
@@ -54,13 +73,9 @@ nav h2 .logo{
     font-weight: 500;
     color: #ffffff;
  }
- .subscribe a{
-    font-size: 1rem;
-    font-weight: 600;
-    color: #ffffff;
-    padding: 16px 12px;
-    border-radius: 1000px;
-    text-decoration: none;
+
+ nav .subscribe a,
+.hero-text div .btn{
     background: linear-gradient(
         
         to right,
@@ -68,8 +83,9 @@ nav h2 .logo{
         #FB09B4 51%,
         #9100F8 100%
     );
-    
  }
+
+
 
  /* hero section */
  #hero-banner{
@@ -120,11 +136,12 @@ nav h2 .logo{
 } 
 .hero-text{
     position: absolute;
-    top: 55%;
-    left: 31%;
+    top: 50%;
+    left: 29%;
     text-align: center;
     color: red;
     bottom: 50%;
+    margin-top: 40px;
 }
 
 .hero-text h1{
@@ -132,50 +149,89 @@ nav h2 .logo{
     color: #ffffff;
     font-weight: 800;
 }
+.hero-text p{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+#transparent-btn{
+    color: #00FF88;
+    border: 1px solid #00FF88;
+}
 
 /* main section */
 main{
+    background-color: #1A0B2E;
+}
+#main{
     width: 70%;
     max-width: 1590px;
     margin: 0 auto;
-    /* background-color: #1A0B2E; */
+    
 }
+
+/* about section */
 
 #about .about-heading{
     text-align: center;
+    padding-top: 50px;
+    
 }
 #about .about-heading h2{
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+#about .about-heading p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
 }
 #about hr{
+    border: 1px solid rgba(255, 255, 255, 0.1); ;
     margin: 80px 0;
+    color: rgba(255, 255, 255, 0.1);
 }
 #about .milestones{
     margin-bottom: 120px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-
+.milestones .card h3{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+.milestones .card p{
+    font-size: 1rem;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
 
 /* why-choose-techwavewhy */
+#why-choose-techwave{
+    background-color: #230E3D;
+    padding: 120px 0;
+}
 #why-choose-techwave h2{
     font-size: 3rem;
-    margin-bottom: 40px;
     text-align: center;
+    color: #ffffff;
 }
-#why-choose-techwave .techwave-card{
+.techwave-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1, 225px);
-   /* border: 1px solid rebeccapurple; */
     gap: 30px;
-    margin-bottom: 120px;
     width: 100%;
-   /* place-items: center; */
+    margin-top: 40px;
+
 }
 
-#why-choose-techwave .card{
+.techwave-card .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,6 +240,18 @@ main{
     border-radius: 40px;
     background-color: rgba(53, 17, 101, 0.4);
 }
+.techwave-card .card h3{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.5rem;
+}
+.techwave-card .card p{
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6)
+}
+
 .towRows{
     grid-column: span 1;
     grid-row: span 2;
@@ -195,18 +263,16 @@ main{
 /* featured episode */
 #featured-episode h2{
     font-size: 3rem;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     text-align: center;
+    color: #ffffff;
 
 }
-#featured-episode .video-card{
+.video-card{
     display: flex;
-    gap: 30px;
-    margin-bottom: 120px;
+    column-gap: 30px;
 } 
-/* #featured-episode .video-wraper{
-    position: relative;
-} */
+
 .thumbnail img{
     position: relative;
     transform: translateY(100%)
@@ -217,21 +283,39 @@ main{
 }
 #featured-episode h3{
     font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
   
 }
-
-
+#featured-episode p{
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+    margin-top: 12px;
+  
+}
+#featured-episode .video-text span{
+    color: #00FF88;
+    
+  
+}
 #featured-episode .video-wraper iframe, 
 .thumbnail img{
 width: 100%;
 height: auto;
 border-radius: 24px 24px 0 0;
 }
+
+/* meet the host */
+#meet-the-host{
+    padding: 120px 0;
+}
 #meet-the-host h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
     font-weight: bold;
+    color: #ffffff;
 
 }
 
@@ -241,10 +325,20 @@ border-radius: 24px 24px 0 0;
     align-items: center;
     gap: 24px;
     border-radius: 40px;
-    background-color: #1A0B2E;
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
 }
-.host-info{
-    color: white;
+.host-info h3{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.host-info p{
+    color: rgba(250, 250, 250, 0.6);
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 16px;
 }
 .host-icons{
     display: flex;
@@ -270,9 +364,6 @@ border-radius: 24px 24px 0 0;
 }
 
 /* footer */
-footer{
-    margin-top: 120px;
-}
 
 .footer-body{
    position: relative;
@@ -306,7 +397,7 @@ footer{
     text-decoration: none;
 }
 .copyright{
-    color: rgba(250, 250, 250, 1);
+    color: rgba(250, 250, 250, 0.6);
     font-size: 1rem;
     line-height: 24px;
 }
