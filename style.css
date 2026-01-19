@@ -75,11 +75,13 @@ main{
     gap: 30px;
     margin-bottom: 120px;
 } 
-#featured-episode .video-wraper{
+/* #featured-episode .video-wraper{
     position: relative;
-}
+} */
 .thumbnail img{
-    position: absolute;
+    position: relative;
+    transform: translateY(100%)
+    
 }
 
 
