@@ -5,7 +5,85 @@
     
 
 }
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
 
+}
+ nav ul{
+    display: flex;
+    gap: 32px;
+ }
+ nav ul li{
+    list-style-type: none;
+ }
+ nav ul a {
+    text-decoration: none;
+ }
+ .subscribe a{
+    background-color: #533C72;
+    color: white;
+ }
+
+ /* hero section */
+ #hero-banner{
+    position: relative;
+
+ }
+ .hero-bg{
+    position: relative;
+ }
+
+ .hero-bg img{
+    width: 100%;
+ }
+ .hero-body{
+    /* border: 3px solid red; */
+    
+ }
+ .hero-body .icons{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: column;  */
+    position: absolute;
+    top: 10%;
+    left: 40%;
+ }
+ 
+.hero-body .icon{
+    width: 250px;
+    height: 250px;
+} 
+
+
+.hero-body .microphone{
+    width: 100px;
+    height: auto;
+    /* background-color: lightgreen; */
+    position: absolute;
+    left: 30%;
+    top: 20%;
+} 
+.hero-text{
+    /* width: 550px; */
+    position: absolute;
+    /* left: 0;
+    right: 0; */
+    top: 55%;
+    left: 31%;
+    text-align: center;
+    color: red;
+    bottom: 50%;
+    /* border: 1px solid green; */
+}
+.hero-text h1{
+    font-size: 3.75rem;
+}
+
+/* main section */
 main{
     width: 70%;
     max-width: 1590px;
