@@ -12,7 +12,7 @@
     visibility: hidden;
 }
 .container{
-    width: 75%;
+    width: 62%;
     max-width: 1590px;
     margin: 0 auto;
 }
@@ -52,7 +52,7 @@ nav,
 
 }
 nav .subscribe a,
-.hero-text div .btn{
+.hero-text div .spotify{
     background: linear-gradient(
 
         to right,
@@ -163,6 +163,22 @@ nav ul li{
     top: 10%;
     left: 40%;
  }
+/* animation */
+ .badge, .spotify{
+    position: relative;
+    animation: movingAnimation 2s ease-in-out 10 alternate;
+ }
+
+ @keyframes movingAnimation {
+
+    from{
+        top: 0;
+    }
+    to{
+        top: 10px;
+    }
+    
+ }
 
 .hero-body .icon{
     width: 250px;
@@ -170,6 +186,7 @@ nav ul li{
 }
 .badge{
     font-size: 1.1rem;
+    font-weight: 600;
     border-radius: 1000px;
     padding: 8px 16px;
     top: 8%;
@@ -374,6 +391,9 @@ border-radius: 24px 24px 0 0;
 /* responsive till 576px */
 
 @media screen and (max-width:576px){
+    body{
+        width: 100vw;
+    }
     nav ul, nav .subscribe{
         display: none;
     }
@@ -390,7 +410,7 @@ border-radius: 24px 24px 0 0;
     }
     .hero-bg img {
         width: 100vw;
-        height: 85vh;
+        height: 90vh;
     }
     .hero-body .icons {
         top: 18%;
@@ -410,8 +430,10 @@ border-radius: 24px 24px 0 0;
     }
     .hero-bg .hero-text {
         top: 55%;
-        left: 3%;
+        left: 2%;
     }
+
+    
 
     /* <!-- about section --> */
     #about .milestones{
@@ -558,7 +580,6 @@ border-radius: 24px 24px 0 0;
         left: 20%;
     }
 
-    /* <!-- about section --> */
     #about .milestones{
         flex-wrap: wrap;
     }
@@ -572,7 +593,6 @@ border-radius: 24px 24px 0 0;
         font-size: 2.7rem;
     }
 
-    /* <!-- why-choose-techwave --> */
 
     .techwave-card{
         grid-template-columns: 1fr;
@@ -583,10 +603,8 @@ border-radius: 24px 24px 0 0;
         padding: 30px 40px;
     }
 
-    /* <!-- featured-episode --> */
     .video-card {
         flex-wrap: wrap;
-        /* flex-direction: column; */
         row-gap: 24px;
     }
      #featured-episode article, .video-card{
@@ -594,11 +612,9 @@ border-radius: 24px 24px 0 0;
     }
     #featured-episode .video-wraper iframe,
     .thumbnail img{
-        /* width: 100%; */
         height: 100vh;
     }
     
-    /* <!-- meet the host --> */
 
     .the-host{
         flex-direction: column;
@@ -609,9 +625,6 @@ border-radius: 24px 24px 0 0;
     }
     
 
-
-
-/* shared style */
     .container{
         width: 90vw;
         margin: 0 auto;
@@ -619,7 +632,6 @@ border-radius: 24px 24px 0 0;
 
     h2{
     font-size: 1.9rem;
-    /* margin-bottom: 24px; */
     }
     #why-choose-techwave,
     #featured-episode{
@@ -640,9 +652,9 @@ border-radius: 24px 24px 0 0;
 
 
 /* responsive from 992px */
-@media screen and (min-width:992px){
+/* @media screen and (min-width:993px){
 
-    /* header icons and text */
+
 
     .hero-body .icons {
         left: 37%;
@@ -652,7 +664,7 @@ border-radius: 24px 24px 0 0;
         left: 23%;
     }
 
-    /* <!-- why-choose-techwave --> */
+    
     .techwave-card{
         grid-template-columns: 1fr;
         column-gap: 0;
@@ -661,10 +673,9 @@ border-radius: 24px 24px 0 0;
     .techwave-card .twoRows, .singlerow {
         padding: 30px 40px;
     }
-     /* <!-- featured-episode --> */
+     
     .video-card {
         flex-wrap: wrap;
-        /* flex-direction: column; */
         row-gap: 24px;
     }
      #featured-episode article, .video-card{
@@ -672,7 +683,6 @@ border-radius: 24px 24px 0 0;
     }
     #featured-episode .video-wraper iframe,
     .thumbnail img{
-        /* width: 100%; */
         height: 100vh;
     }
 
@@ -681,4 +691,4 @@ border-radius: 24px 24px 0 0;
     }
 
 
-}
+} */
