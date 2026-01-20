@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
 
 .inter-font-style {
@@ -24,6 +22,7 @@
 
 
  /* main style */
+
 /* navbar */
 nav{
     display: flex;
@@ -163,7 +162,7 @@ nav h2{
 main{
     background-color: #1A0B2E;
 }
-#main{
+.container{
     width: 70%;
     max-width: 1590px;
     margin: 0 auto;
