@@ -8,6 +8,9 @@
   font-family: "Inter", sans-serif;
 }
 /* shared style */
+.hide{
+    display: none;
+}
 
  .subscribe a{
     display: inline-block;
@@ -20,6 +23,14 @@
     margin-right: 8px;
  }
 
+ h2{
+    text-align: center;
+    /* margin-bottom: 40px; */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+
+}
 
  /* main style */
 
@@ -32,11 +43,7 @@ nav{
     background-color: #1A0B2E;
 
 }
-nav h2{
-    font-size: 3rem;
-    color: #ffffff;
 
-}
 .gradient{
     
     background:linear-gradient(
@@ -176,12 +183,12 @@ main{
     padding-top: 50px;
     
 }
-#about .about-heading h2{
+/* #about .about-heading h2{
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
     color: #ffffff;
-}
+} */
 #about .about-heading p{
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -215,11 +222,11 @@ main{
     background-color: #230E3D;
     padding: 120px 0;
 }
-#why-choose-techwave h2{
+/* #why-choose-techwave h2{
     font-size: 3rem;
     text-align: center;
     color: #ffffff;
-}
+} */
 .techwave-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -260,26 +267,41 @@ main{
     grid-row: span 1 ;
 }
 /* featured episode */
-#featured-episode h2{
+
+/* #featured-episode h2{
     font-size: 3rem;
-    /* margin-bottom: 40px; */
+    margin-bottom: 40px;
     text-align: center;
     color: #ffffff;
 
-}
+} */
+
 .video-card{
     display: flex;
     column-gap: 30px;
 } 
+.video-wraper{
+    position: relative;
+}
 
 .thumbnail img{
-    position: relative;
-    transform: translateY(100%)
-}
-#featured-episode .video-text{
-    margin-top: 24px;
+    position: absolute;
+
+    /* width: 300px;
+    height: 300px; */
+    transform: translateY(-100%);
 
 }
+/* #featured-episode .video-wraper iframe{
+    position: absolute;
+    transform: translateY(100%)
+} */
+
+
+/* #featured-episode .video-text{
+    margin-top: 24px;
+
+} */
 #featured-episode h3{
     font-size: 1.5rem;
     color: #ffffff;
@@ -298,6 +320,7 @@ main{
     
   
 }
+
 #featured-episode .video-wraper iframe, 
 .thumbnail img{
 width: 100%;
@@ -309,14 +332,14 @@ border-radius: 24px 24px 0 0;
 #meet-the-host{
     padding: 120px 0;
 }
-#meet-the-host h2{
+/* #meet-the-host h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
 
-}
+} */
 
 .the-host{
     display: flex;
@@ -379,11 +402,10 @@ border-radius: 24px 24px 0 0;
     text-align: center;
 
 }
-.footer-info h2{
+/* .footer-info h2{
     color: white;
-    font-size: 3.75rem ;
-    
-}
+    font-size: 3.75rem ;   
+} */
 .footer-icons{
     display: flex;
     justify-content: space-between;
