@@ -11,37 +11,27 @@
 .hide{
     display: none;
 }
-
- .subscribe a{
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #ffffff;
-    padding: 16px 12px;
-    border-radius: 1000px;
-    text-decoration: none;
-    margin-right: 8px;
- }
-
- h2{
-    text-align: center;
-    /* margin-bottom: 40px; */
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-
+.container{
+    width: 70%;
+    max-width: 1590px;
+    margin: 0 auto;
 }
-
- /* main style */
-
-/* navbar */
-nav{
+nav,
+nav ul,
+#about .milestones,
+.the-host,
+.techwave-card .card,
+.img-circle a,
+.footer-icons{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 30px 0;
-    background-color: #1A0B2E;
-
+    justify-content: center; 
+}
+nav,
+#about .milestones,
+.footer-icons
+{
+    justify-content: space-around;
 }
 
 .gradient{
@@ -63,24 +53,7 @@ nav{
    -1px =1px black;
 
 }
-
- nav ul{
-    display: flex;
-    gap: 32px;
-    align-items: center;
- }
- nav ul li{
-    list-style-type: none;
- }
- nav ul a {
-    text-decoration: none;
-    font-size: 1rem;
-    line-height: 120%;
-    font-weight: 500;
-    color: #ffffff;
- }
-
- nav .subscribe a,
+nav .subscribe a,
 .hero-text div .btn{
     background: linear-gradient(
         
@@ -90,8 +63,61 @@ nav{
         #9100F8 100%
     );
  }
+ .subscribe a{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 16px 12px;
+    border-radius: 1000px;
+    text-decoration: none;
+    margin-right: 8px;
+ }
 
+ h2{
+    text-align: center;
+    /* margin-bottom: 40px; */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+#featured-episode, 
+#about .milestones,
+#why-choose-techwave,
+#meet-the-host{
+    margin-top: 120px;
+}
+/* #featured-episode .video-card{
+    padding-top: 40px;
+} */
 
+ /* main style */
+
+/* navbar */
+nav{
+    padding: 30px 0;
+    background-color: #1A0B2E;
+}
+nav ul{
+    gap: 32px;
+}
+nav ul li{
+    list-style-type: none;
+ }
+ nav ul a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 500;
+    color: #ffffff;
+ }
 
  /* hero section */
  #hero-banner{
@@ -107,10 +133,6 @@ nav{
  }
  
  .hero-body .icons{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* flex-direction: column;  */
     position: absolute;
     top: 10%;
     left: 40%;
@@ -155,11 +177,7 @@ nav{
     color: #ffffff;
     font-weight: 800;
 }
-.hero-text p{
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 24px;
-}
+
 #transparent-btn{
     color: #00FF88;
     border: 1px solid #00FF88;
@@ -169,12 +187,7 @@ nav{
 main{
     background-color: #1A0B2E;
 }
-.container{
-    width: 70%;
-    max-width: 1590px;
-    margin: 0 auto;
-    
-}
+
 
 /* about section */
 
@@ -183,44 +196,29 @@ main{
     padding-top: 50px;
     
 }
-/* #about .about-heading h2{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #ffffff;
-} */
-#about .about-heading p{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.8);
-}
+
 #about hr{
     border: 1px solid rgba(255, 255, 255, 0.1); ;
     margin: 80px 0;
     color: rgba(255, 255, 255, 0.1);
 }
 #about .milestones{
-    margin-bottom: 120px;
-    display: flex;
+    /* margin-bottom: 120px; */
+    /* display: flex; */
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 .milestones .card h3{
     font-size: 3rem;
     font-weight: 900;
     color: #00FF88;
 }
-.milestones .card p{
-    font-size: 1rem;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.8);
-}
+
 
 /* why-choose-techwavewhy */
 #why-choose-techwave{
     background-color: #230E3D;
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 /* #why-choose-techwave h2{
     font-size: 3rem;
@@ -238,9 +236,7 @@ main{
 }
 
 .techwave-card .card{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start ;
     padding: 40px;
     border-radius: 40px;
@@ -251,12 +247,7 @@ main{
         font-weight: 700;
         font-size: 1.5rem;
 }
-.techwave-card .card p{
-        color: #ffffff;
-        font-size: 1rem;
-        line-height: 24px;
-        color: rgba(255, 255, 255, 0.6)
-}
+
 
 .towRows{
     grid-column: span 1;
@@ -268,13 +259,7 @@ main{
 }
 /* featured episode */
 
-/* #featured-episode h2{
-    font-size: 3rem;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #ffffff;
 
-} */
 
 .video-card{
     display: flex;
@@ -308,13 +293,7 @@ main{
     font-weight: 700;
   
 }
-#featured-episode p{
-    font-size: 1rem;
-    color:rgba(255, 255, 255, 0.6);
-    line-height: 24px;
-    margin-top: 12px;
-  
-}
+
 #featured-episode .video-text span{
     color: #00FF88;
     
@@ -329,9 +308,9 @@ border-radius: 24px 24px 0 0;
 }
 
 /* meet the host */
-#meet-the-host{
+/* #meet-the-host{
     padding: 120px 0;
-}
+} */
 /* #meet-the-host h2{
     text-align: center;
     margin-bottom: 40px;
@@ -342,9 +321,9 @@ border-radius: 24px 24px 0 0;
 } */
 
 .the-host{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     gap: 24px;
     border-radius: 40px;
     padding: 40px;
@@ -356,12 +335,7 @@ border-radius: 24px 24px 0 0;
     font-weight: 700;
     margin-bottom: 16px;
 }
-.host-info p{
-    color: rgba(250, 250, 250, 0.6);
-    font-size: 1rem;
-    line-height: 24px;
-    margin-bottom: 16px;
-}
+
 .host-icons{
     display: flex;
     gap: 8px;
@@ -374,9 +348,9 @@ border-radius: 24px 24px 0 0;
     border: 1px solid #533C72;
 }
 .img-circle a{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     width: 100%;
     height: 100%;
 }
@@ -407,18 +381,13 @@ border-radius: 24px 24px 0 0;
     font-size: 3.75rem ;   
 } */
 .footer-icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
     gap: 40px;
     margin: 32px 0;
 }
 .footer-icons a{
     color: white;
     text-decoration: none;
-}
-.copyright{
-    color: rgba(250, 250, 250, 0.6);
-    font-size: 1rem;
-    line-height: 24px;
 }
