@@ -8,8 +8,8 @@
   font-family: "Inter", sans-serif;
 }
 /* shared style */
-.hide{
-    display: none;
+.hamburger{
+    visibility: hidden;
 }
 .container{
     width: 75%;
@@ -374,6 +374,9 @@ border-radius: 24px 24px 0 0;
 @media screen and (max-width:576px){
     nav ul, nav .subscribe{
         display: none;
+    }
+    nav .hamburger{
+        visibility: inherit;
     }
     nav{
         justify-content: space-between;
