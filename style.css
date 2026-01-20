@@ -12,7 +12,7 @@
     visibility: hidden;
 }
 .container{
-    width: 62%;
+    width: 75%;
     max-width: 1590px;
     margin: 0 auto;
 }
@@ -298,6 +298,7 @@ main{
 .video-card article{
     background-color: #250D44;
     
+    
 }
 .video-wraper{
     position: relative;
@@ -317,14 +318,13 @@ main{
 
 #featured-episode .video-text span{
     color: #00FF88;
-    /* color: red; */
     
 }
 
 #featured-episode .video-wraper iframe,
-.thumbnail img, .video-card{
+.thumbnail img{
 width: 100%;
-height: auto;
+height: 100%;
 border-radius: 24px 24px 0 0;
 }
 
@@ -645,35 +645,73 @@ border-radius: 24px 24px 0 0;
     .footer-icons {
         gap: 25px;
     }
-
-    
-    
 }
 
-
-/* responsive from 992px */
-/* @media screen and (min-width:993px){
-
-
-
-    .hero-body .icons {
-        left: 37%;
-    }
-    .hero-text{
-        top: 55%;
-        left: 23%;
-    }
-
+/* responsive from 577p to 991px */
+/* @media screen and (min-width:577px) and (max-width:991px) {
     
+    nav ul, nav .subscribe{
+        display: none;
+    }
+    nav .hamburger{
+        visibility: inherit;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    nav h2{
+        margin: 0;
+
+    }
+    .hero-bg img {
+        width: 100vw;
+        height: 100vh;
+    }
+    .hero-body .icons {
+        top: 15%;
+        left: 35%;
+    }
+    .hero-body .icon {
+        width: 30vw;
+        height: auto;
+    }
+    .badge{
+         padding: 6px 12px;
+    }
+
+    .hero-body .microphone {
+        width: 12vw;
+        height: auto;
+    }
+    .hero-bg .hero-text {
+        top: 60%;
+        left: 20%;
+    }
+
+    #about .milestones{
+        flex-wrap: wrap;
+    }
+    #about hr{
+        margin: 40px 0;
+    }
+    #about .milestones .card{
+         width: 45%;
+    }
+    .milestones .card h3 {
+        font-size: 2.7rem;
+    }
+
+
     .techwave-card{
         grid-template-columns: 1fr;
         column-gap: 0;
         row-gap: 16px;
     }
-    .techwave-card .twoRows, .singlerow {
+    .techwave-card .twoRows {
         padding: 30px 40px;
     }
-     
+
     .video-card {
         flex-wrap: wrap;
         row-gap: 24px;
@@ -685,10 +723,38 @@ border-radius: 24px 24px 0 0;
     .thumbnail img{
         height: 100vh;
     }
+    
 
-    .footer-icons {
-        gap: 30px;
+    .the-host{
+        flex-direction: column;
+        text-align: center;
+    }
+    .host-icons{
+    justify-content: center;
+    }
+    
+
+    .container{
+        width: 90vw;
+        margin: 0 auto;
     }
 
+    h2{
+    font-size: 1.9rem;
+    }
+    #why-choose-techwave,
+    #featured-episode{
+        padding-top:60px;
+    }
 
+    #about .milestones, #why-choose-techwave, #featured-episode, #meet-the-host {
+        padding-bottom: 60px;
+    }
+
+    .footer-icons {
+        gap: 25px;
+    }
+
+    
+    
 } */
