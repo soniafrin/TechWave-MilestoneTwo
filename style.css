@@ -12,7 +12,7 @@
     display: none;
 }
 .container{
-    width: 70%;
+    width: 75%;
     max-width: 1590px;
     margin: 0 auto;
 }
@@ -20,12 +20,12 @@ nav,
 nav ul,
 #about .milestones,
 .the-host,
-.techwave-card .card,
+/* .techwave-card, */
 .img-circle a,
 .footer-icons{
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 nav,
 #about .milestones,
@@ -35,10 +35,10 @@ nav,
 }
 
 .gradient{
-    
+
     background:linear-gradient(
         to bottom,
-        
+
         #F7E93F 0%,
         #FB09B4 51%,
         #9100F8 100%
@@ -46,7 +46,7 @@ nav,
     );
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent; 
+    color: transparent;
     text-shadow: -1px -1px black,
    -1px -1px black,
     -1px -1px black,
@@ -56,7 +56,7 @@ nav,
 nav .subscribe a,
 .hero-text div .btn{
     background: linear-gradient(
-        
+
         to right,
         #F7E93F 0%,
         #FB09B4 51%,
@@ -68,7 +68,7 @@ nav .subscribe a,
     font-size: 1rem;
     font-weight: 600;
     color: #ffffff;
-    padding: 16px 12px;
+    padding: 12px 20px;
     border-radius: 1000px;
     text-decoration: none;
     margin-right: 8px;
@@ -76,30 +76,57 @@ nav .subscribe a,
 
  h2{
     text-align: center;
-    /* margin-bottom: 40px; */
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 40px;
 }
+
 p{
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.6);
 }
-#featured-episode, 
+.techwave-card .card h3,
+#featured-episode h3,
+.host-info h3{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.hero-text,
+.techwave-card{
+    margin-top: 40px;
+}
+
+#about .about-heading h2,
+.techwave-card .card img,
+.techwave-card .card h3,
+.host-info h3{
+    margin-bottom: 16px;
+}
+
+
 #about .milestones,
 #why-choose-techwave,
+#featured-episode,
 #meet-the-host{
-    margin-top: 120px;
+    padding-bottom: 120px;
 }
-/* #featured-episode .video-card{
-    padding-top: 40px;
-} */
+
+#why-choose-techwave,
+#featured-episode{
+    padding-top:120px;
+}
+
+
 
  /* main style */
-
+header{
+    background-color: rgba(35, 14, 61, 1);
+}
 /* navbar */
 nav{
     padding: 30px 0;
@@ -122,6 +149,7 @@ nav ul li{
  /* hero section */
  #hero-banner{
     position: relative;
+    margin-top: 1px;
 
  }
  .hero-bg{
@@ -131,17 +159,17 @@ nav ul li{
  .hero-bg img{
     width: 100%;
  }
- 
+
  .hero-body .icons{
     position: absolute;
     top: 10%;
     left: 40%;
  }
- 
+
 .hero-body .icon{
     width: 250px;
     height: 250px;
-} 
+}
 .badge{
     font-size: 1.1rem;
     border-radius: 1000px;
@@ -161,7 +189,7 @@ nav ul li{
     position: absolute;
     left: 30%;
     top: 20%;
-} 
+}
 .hero-text{
     position: absolute;
     top: 50%;
@@ -169,7 +197,6 @@ nav ul li{
     text-align: center;
     color: red;
     bottom: 50%;
-    margin-top: 40px;
 }
 
 .hero-text h1{
@@ -194,20 +221,15 @@ main{
 #about .about-heading{
     text-align: center;
     padding-top: 50px;
-    
+
 }
 
 #about hr{
-    border: 1px solid rgba(255, 255, 255, 0.1); ;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 80px 0;
     color: rgba(255, 255, 255, 0.1);
 }
-#about .milestones{
-    /* margin-bottom: 120px; */
-    /* display: flex; */
-    justify-content: space-around;
-    /* align-items: center; */
-}
+
 .milestones .card h3{
     font-size: 3rem;
     font-weight: 900;
@@ -215,92 +237,66 @@ main{
 }
 
 
-/* why-choose-techwavewhy */
+/* why-choose-techwave */
 #why-choose-techwave{
     background-color: #230E3D;
-    /* padding: 120px 0; */
 }
-/* #why-choose-techwave h2{
-    font-size: 3rem;
-    text-align: center;
-    color: #ffffff;
-} */
+
 .techwave-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1, 225px);
+    grid-template-rows: repeat(1, 273px);
     gap: 30px;
-    width: 100%;
-    margin-top: 40px;
-
 }
 
 .techwave-card .card{
-    flex-direction: column;
-    align-items: start ;
-    padding: 40px;
     border-radius: 40px;
     background-color: rgba(53, 17, 101, 0.4);
 }
-.techwave-card .card h3{
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 1.5rem;
-}
-
-
-.towRows{
+.twoRows{
+    padding: 100px 40px;
     grid-column: span 1;
     grid-row: span 2;
 }
 .largeRow{
+    padding: 40px;
     grid-column: span 2;
     grid-row: span 1 ;
 }
+.singlerow{
+    padding:0 40px;
+    padding-top: 30px;
+    grid-column: span 1;
+    grid-row: span 1 ;
+}
+
+
 /* featured episode */
-
-
-
 .video-card{
     display: flex;
     column-gap: 30px;
-} 
+}
 .video-wraper{
     position: relative;
 }
 
 .thumbnail img{
     position: absolute;
-
-    /* width: 300px;
-    height: 300px; */
     transform: translateY(-100%);
-
 }
-/* #featured-episode .video-wraper iframe{
-    position: absolute;
-    transform: translateY(100%)
-} */
 
-
-/* #featured-episode .video-text{
+#featured-episode .video-text{
     margin-top: 24px;
-
-} */
-#featured-episode h3{
-    font-size: 1.5rem;
-    color: #ffffff;
-    font-weight: 700;
-  
+}
+#featured-episode .video-text p{
+    margin-top: 12px;
 }
 
 #featured-episode .video-text span{
     color: #00FF88;
-    
-  
 }
 
-#featured-episode .video-wraper iframe, 
+#featured-episode .video-wraper iframe,
 .thumbnail img{
 width: 100%;
 height: auto;
@@ -308,32 +304,14 @@ border-radius: 24px 24px 0 0;
 }
 
 /* meet the host */
-/* #meet-the-host{
-    padding: 120px 0;
-} */
-/* #meet-the-host h2{
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-
-} */
-
 .the-host{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     gap: 24px;
     border-radius: 40px;
     padding: 40px;
     background-color: rgba(53, 17, 101, 0.4);
 }
 .host-info h3{
-    color: #ffffff;
     font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 16px;
 }
 
 .host-icons{
@@ -376,14 +354,8 @@ border-radius: 24px 24px 0 0;
     text-align: center;
 
 }
-/* .footer-info h2{
-    color: white;
-    font-size: 3.75rem ;   
-} */
+
 .footer-icons{
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
     gap: 40px;
     margin: 32px 0;
 }
