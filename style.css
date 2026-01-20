@@ -305,7 +305,7 @@ main{
 }
 
 #featured-episode .video-wraper iframe,
-.thumbnail img{
+.thumbnail img, .video-card{
 width: 100%;
 height: auto;
 border-radius: 24px 24px 0 0;
@@ -371,6 +371,8 @@ border-radius: 24px 24px 0 0;
     text-decoration: none;
 }
 
+/* responsive till 576px */
+
 @media screen and (max-width:576px){
     nav ul, nav .subscribe{
         display: none;
@@ -410,7 +412,8 @@ border-radius: 24px 24px 0 0;
         top: 55%;
         left: 3%;
     }
-    
+
+    /* <!-- about section --> */
     #about .milestones{
         /* display: grid;
         grid-template-columns: repeat(2, 120px);
@@ -427,6 +430,9 @@ border-radius: 24px 24px 0 0;
     .milestones .card h3 {
         font-size: 2.7rem;
     }
+
+    /* <!-- why-choose-techwave --> */
+
     .techwave-card{
         grid-template-columns: 1fr;
         column-gap: 0;
@@ -435,6 +441,8 @@ border-radius: 24px 24px 0 0;
     .techwave-card .twoRows {
         padding: 30px 40px;
     }
+
+    /* <!-- featured-episode --> */
     .video-card {
         flex-direction: column;
         row-gap: 24px;
@@ -443,7 +451,14 @@ border-radius: 24px 24px 0 0;
     #featured-episode article{
         border-radius: 0 0 24px 24px;
     }
+    #featured-episode .video-wraper iframe,
+    .thumbnail img{
+        width: 90vw;
+        height: 50vh;
+    }
     
+    /* <!-- meet the host --> */
+
     .the-host{
         flex-direction: column;
         text-align: center;
@@ -451,11 +466,10 @@ border-radius: 24px 24px 0 0;
     .host-icons{
     justify-content: center;
     }
-    #featured-episode .video-wraper iframe,
-    .thumbnail img{
-        width: 90vw;
-        height: 50vh;
-    }
+    
+
+    /* <!-- footer section --> */
+
     .footer-info {
         width:100vw;
     }
@@ -499,5 +513,172 @@ border-radius: 24px 24px 0 0;
     #about .milestones, #why-choose-techwave, #featured-episode, #meet-the-host {
         padding-bottom: 60px;
     }
+
+}
+
+/* responsive from 577p to 991px */
+@media screen and (min-width:577px) and (max-width:991px) {
+    
+    nav ul, nav .subscribe{
+        display: none;
+    }
+    nav .hamburger{
+        visibility: inherit;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    nav h2{
+        margin: 0;
+
+    }
+    .hero-bg img {
+        width: 100vw;
+        height: 100vh;
+    }
+    .hero-body .icons {
+        top: 15%;
+        left: 35%;
+    }
+    .hero-body .icon {
+        width: 30vw;
+        height: auto;
+    }
+    .badge{
+         padding: 6px 12px;
+    }
+
+    .hero-body .microphone {
+        width: 12vw;
+        height: auto;
+    }
+    .hero-bg .hero-text {
+        top: 60%;
+        left: 20%;
+    }
+
+    /* <!-- about section --> */
+    #about .milestones{
+        flex-wrap: wrap;
+    }
+    #about hr{
+        margin: 40px 0;
+    }
+    #about .milestones .card{
+         width: 45%;
+    }
+    .milestones .card h3 {
+        font-size: 2.7rem;
+    }
+
+    /* <!-- why-choose-techwave --> */
+
+    .techwave-card{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .techwave-card .twoRows {
+        padding: 30px 40px;
+    }
+
+    /* <!-- featured-episode --> */
+    .video-card {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        row-gap: 24px;
+    }
+     #featured-episode article, .video-card{
+        border-radius: 0 0 24px 24px;
+    }
+    #featured-episode .video-wraper iframe,
+    .thumbnail img{
+        /* width: 100%; */
+        height: 100vh;
+    }
+    
+    /* <!-- meet the host --> */
+
+    .the-host{
+        flex-direction: column;
+        text-align: center;
+    }
+    .host-icons{
+    justify-content: center;
+    }
+    
+
+
+
+/* shared style */
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    h2{
+    font-size: 1.9rem;
+    /* margin-bottom: 24px; */
+    }
+    #why-choose-techwave,
+    #featured-episode{
+        padding-top:60px;
+    }
+
+    #about .milestones, #why-choose-techwave, #featured-episode, #meet-the-host {
+        padding-bottom: 60px;
+    }
+
+    .footer-icons {
+        gap: 25px;
+    }
+
+    
+    
+}
+
+
+/* responsive from 992px */
+@media screen and (min-width:992px){
+
+    /* header icons and text */
+
+    .hero-body .icons {
+        left: 37%;
+    }
+    .hero-text{
+        top: 55%;
+        left: 23%;
+    }
+
+    /* <!-- why-choose-techwave --> */
+    .techwave-card{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .techwave-card .twoRows, .singlerow {
+        padding: 30px 40px;
+    }
+     /* <!-- featured-episode --> */
+    .video-card {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        row-gap: 24px;
+    }
+     #featured-episode article, .video-card{
+        border-radius: 0 0 24px 24px;
+    }
+    #featured-episode .video-wraper iframe,
+    .thumbnail img{
+        /* width: 100%; */
+        height: 100vh;
+    }
+
+    .footer-icons {
+        gap: 30px;
+    }
+
 
 }
