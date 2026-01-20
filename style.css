@@ -20,7 +20,6 @@ nav,
 nav ul,
 #about .milestones,
 .the-host,
-/* .techwave-card, */
 .img-circle a,
 .footer-icons{
     display: flex;
@@ -373,8 +372,16 @@ border-radius: 24px 24px 0 0;
 }
 
 @media screen and (max-width:576px){
-    nav ul, nav div{
+    nav ul, nav .subscribe{
         display: none;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    nav h2{
+        margin: 0;
+
     }
     .hero-bg img {
         width: 100vw;
@@ -448,22 +455,25 @@ border-radius: 24px 24px 0 0;
     }
     .footer-info {
         width:100vw;
-        /* height: auto; */
     }
     .footer-bg img{
         width: 100vw;
         height: 40vh;
         
     }
+    footer h2{
+        margin-bottom: 24px;
+    }
     .footer-icons {
         flex-wrap: wrap;
         width: 255px;
         gap: 16px;
-        margin: 0 auto;
+        margin: 25px auto;
         /* margin-bottom: 24px; */
     }
+    
     .copyright{
-        margin: 24px auto 40px
+        margin-top: 24px;
     }
 
 
@@ -475,8 +485,8 @@ border-radius: 24px 24px 0 0;
     }
 
     h2{
-    font-size: 2rem;
-    margin-bottom: 24px;
+    font-size: 1.9rem;
+    /* margin-bottom: 24px; */
     }
     #why-choose-techwave,
     #featured-episode{
